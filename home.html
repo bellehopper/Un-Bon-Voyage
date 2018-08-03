@@ -13,15 +13,28 @@
         h1,h2,h3,h3,h5,p {
             margin-bottom: 20px;}
         
-
+        nav {
+            position: fixed;
+            height: 50px;
+            background-color: rgba (0,0,0, .5);
+            z-index: 99;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin-left: 30px;
+            line-height: 50px;
+        }
             
         .sect {
             height: 100%;
             background-size: cover;
+            background-attachment:fixed;
         }
         .subSection {
             height: 50%;
-            background-color: green;
+            background-color: white;
         }
         
         .sectOne{ background-image: url("NiceOrange.JPG");
@@ -96,6 +109,14 @@
 </head>
 
 <body>
+    
+    <nav>
+        <a href= "#">Home</a>
+        <a href= "#">Flight</a>
+        <a href= "#">Paris</a>
+        <a href= "#">Paris</a>
+    </nav>
+    
     <div class = "sect sectOne"> </div>
     <div class = "subSection"> </div>
     <div class = "sect sectTwo"> </div>
