@@ -47,7 +47,11 @@
             height: 60%;
             overflow:hidden;
         }
-       
+<!---------------------------------------------------------->
+        
+        .sectOne{ background-image: url("NiceOrange.JPG");
+        }
+        
         
         .subSectOne {
           background-color: #FFFFD6; 
@@ -72,12 +76,14 @@
             padding: 10px 20px;
         }
         
-        .sectOne{ background-image: url("NiceOrange.JPG");
-        }
-        
+<!------------------------------------------------------------------------------------->               
         .sectTwo{ background-image: url("BridgeRiver.JPG");
         }
         
+        .subSectTwo {
+          background-color: #e6f0ff; 
+        }
+<!-------------------------------------------------------------------------------------->        
         .sectThree{ background-image: url("NotreDameOutCopy.jpg");
         }
         
@@ -87,7 +93,7 @@
         
 
 
-       img {
+       .polaroidPhoto {
         width: 100%;
         height: auto;}
                 
@@ -117,6 +123,17 @@
                     margin-right: auto;
                    vertical-align:center; 
                    color: #FFA07A;
+                    font-family: arial;
+        }
+        
+                h3 {
+                    text-align: left;
+                    margin-top: 50px;
+                    margin-bottom: 50px;
+                    margin-left: 40px;
+                    margin-right: auto;
+                   vertical-align:center; 
+                   color: #99c299;
                     font-family: arial;
         }
                 
@@ -182,7 +199,7 @@
     <div class = "subSection subSectOne">
         
       <div class= "polaroid">
-        <img src="FriendsArc.jpg">
+          <div class= "polaroidPhoto" img src="FriendsArc.jpg"></div>
         <div class= "container">
             <p>Mes Amis et Moi</p>
         </div>
@@ -193,10 +210,14 @@
           trip (special thank you to my mom), especially since going <br>with my friends made it an even more incredible and fun experience. I created this           site so I could write<br> about the memories we made each day, what we saw and learned, and so I could post these pictures.</p1>
     </div>
     
-    
-    
+       
     <div class = "sect sectTwo"> </div>
-    <div class = "subSection"> </div>
+    <div class = "subSection subSectTwo"> 
+        <h3> Where exactly did we go? </h3>
+        <p3> We went to Paris, Versailles, Nice, Monaco, and Eze. We then went to Provence with a stop in Arles. Next, we visited Carcassonne. Finally, we finished our trip in Barcelona, Spain.</p3>
+    </div>
+    
+    
     <div class = "sect sectThree"> </div>
     <div class = "subSection"> </div>
     <div class = "sect sectFour"> </div>
