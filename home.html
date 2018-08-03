@@ -22,19 +22,22 @@
             position: fixed;
             width: 100%;
             height: 50px;
+            display:block;
             background-color: rgba(0,0,0,.5);
-            font-color: white;
+            color: white;
+            opacity: 0.5;
             z-index: 99;
         }
         
         nav a {
             text-decoration: none;
-            background:white;
-            font-color: black;
-            opacity: 0.5;
             margin-left: 30px;
             line-height: 50px;
         }
+        
+        nav a:hover {
+            background:white;
+            color: black;}
             
         .sect {
             height: 100%;
@@ -44,6 +47,7 @@
         .subSection {
             height: 50%;
             background-color: white;
+            overflow:auto;
         }
         
         .sectOne{ background-image: url("NiceOrange.JPG");
@@ -95,7 +99,7 @@
                 p1{
                     color:black;
                     vertical-align: middle;
-                    margin-right: 15%;
+                    margin-right: 70px;
                     font-family: tahoma;
                     font-size: 700 px;
                     weight: bold;
