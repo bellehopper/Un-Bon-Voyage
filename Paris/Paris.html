@@ -4,6 +4,7 @@
 <head>
     <style>
         * { margin: 0;
+            box-sizing: border-box;
         }
         
         html {
@@ -37,6 +38,17 @@
         nav a:hover {
             background:white;
             color: black;}
+        
+        .column {
+            float: left;
+            width: 33.33%
+            padding: 5px;
+            
+         .row: :after {
+             content: "";
+             clear: both;
+             display: table;
+            }
             
         .sect {
             height: 100%;
@@ -117,28 +129,33 @@ margin:0}
       <div class = "subSection"></div>
       
       <div class = "sect sectTwo">
-        <div class = "card-container">
-        <div class = "card"> 
-            <div class = "front"><h1>Front</h1></div>
-            <div class = "back"><h1>Back</h1></div>
-        </div>
-        </div>
-          
-        <div class = "card-container">
-        <div class = "card"> 
-            <div class = "front"><h1>Front</h1></div>
-            <div class = "back"><h1>Back</h1></div>
-        </div>
-        </div>
-          
-        <div class = "card-container">
-        <div class = "card"> 
-            <div class = "front"><h1>Front</h1></div>
-            <div class = "back"><h1>Back</h1></div>
-        </div>
-        </div>
-      
-      </div>
+        <div class ="row">
+            <div class="column">
+                <div class = "card-container">
+                <div class = "card"> 
+                    <div class = "front"><h1>Front</h1></div>
+                    <div class = "back"><h1>Back</h1></div>
+                </div>
+                </div>
+            </div>  
+            <div class "column">
+                <div class = "card-container">
+                <div class = "card"> 
+                    <div class = "front"><h1>Front</h1></div>
+                    <div class = "back"><h1>Back</h1></div>
+                </div>
+                </div>
+            </div>
+            <div class "column">
+                <div class = "card-container">
+                <div class = "card"> 
+                    <div class = "front"><h1>Front</h1></div>
+                    <div class = "back"><h1>Back</h1></div>
+                </div> <!-- Close Card -->
+                </div> <!-- Close Card Container -->
+            </div> <!-- close column -->
+          </div>   <!-- close row -->
+      </div>  <!-- close sect -->
       <div class = "subSection"></div>  
     
   </body>
