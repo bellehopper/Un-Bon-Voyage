@@ -76,7 +76,6 @@
 .card-container {
 -webkit-perspective: 900px;
 }
-
 .card {
 position: relative;
 background: pink;
@@ -85,70 +84,82 @@ line-height: 200px;
 transition: all 1s ease;
 -webkit-transform-style: preserve-3d;
 }
-
-
 .card:hover {
 transform: rotateY(180deg);
 }
-
 .front, .back {
 position: absolute;
 top:0;
 left:0;
 -webkit-backface-visibility:hidden;
 }
-
 .back{
 transform: rotateY(180deg);
 }
-
 h1 {
 margin:0;}
-      
-  </style>
-  </head>
-  
-  
-  <body>
-    
+    </style>
+</head>
+
+
+<body>
+
     <nav>
-        <a href= "#">Home</a>
-        <a href= "#">Flight</a>
-        <a href= "#">Paris</a>
+        <a href="#">Home</a>
+        <a href="#">Flight</a>
+        <a href="#">Paris</a>
     </nav>
-      
-      <div class = "sect sectOne" ></div>    
-      <div class = "subSection"></div>
-      
-      <div class = "sect sectTwo">
-        <div class ="row">
+
+    <div class="sect sectOne"></div>
+    <div class="subSection"></div>
+
+    <div class="sect sectTwo">
+        <div class="row">
             <div class="column">
-                <div class = "card-container">
-                <div class = "card"> 
-                    <div class = "front"><h1>Front</h1></div>
-                    <div class = "back"><h1>Back</h1></div>
-                </div>
-                </div>
-            </div>  
-            <div class "column">
-                <div class = "card-container">
-                <div class = "card"> 
-                    <div class = "front"><h1>Front</h1></div>
-                    <div class = "back"><h1>Back</h1></div>
-                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="front">
+                            <h1>Front</h1>
+                        </div>
+                        <div class="back">
+                            <h1>Back</h1>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class "column">
-                <div class = "card-container">
-                <div class = "card"> 
-                    <div class = "front"><h1>Front</h1></div>
-                    <div class = "back"><h1>Back</h1></div>
-                </div> <!-- Close Card -->
-                </div> <!-- Close Card Container -->
-            </div> <!-- close column -->
-          </div>   <!-- close row -->
-      </div>  <!-- close sect -->
-      <div class = "subSection"></div>  
-    
-  </body>
+            <div class= "column">
+                <div class="card-container">
+                    <div class="card">
+                        <div class="front">
+                            <h1>Front</h1>
+                        </div>
+                        <div class="back">
+                            <h1>Back</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class= "column">
+                <div class="card-container">
+                    <div class="card">
+                        <div class="front">
+                            <h1>Front</h1>
+                        </div>
+                        <div class="back">
+                            <h1>Back</h1>
+                        </div>
+                    </div>
+                    <!-- Close Card -->
+                </div>
+                <!-- Close Card Container -->
+            </div>
+            <!-- close column -->
+        </div>
+        <!-- close row -->
+    </div>
+    <!-- close sect -->
+    <div class="subSection"></div>
+
+</body>
+
 </html>
